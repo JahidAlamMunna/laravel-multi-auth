@@ -33,6 +33,7 @@
                             <li class="nav-item sidebar-item"><a class="nav-link" href="{{ url('/admin/doctors') }}">Doctors</a></li>
 
                         </ul>
+                        
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">

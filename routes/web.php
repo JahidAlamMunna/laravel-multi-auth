@@ -26,6 +26,7 @@ Route::get('admin/home', 'HomeController@handleAdmin')->name('admin.route')->mid
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard')->middleware('admin');
 Route::resource('appointment', 'AppointmentController');
 Route::resource('doctor', 'DoctorController');
+Route::get('/hospital','HospitalController@index')->name('hospital');
 Route::get('/admin/appointments', 'AdminController@appointments')->name('admin.appointments')->middleware('admin');
 Route::post('/admin/appointments', 'AppointmentController@approve')->name('appointment.approve')->middleware('admin');
 Route::get('/admin/doctors','AdminController@doctors')->name('admin.doctors')->middleware('admin');
